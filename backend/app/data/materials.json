@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Copper",
+    "category": "base_metal",
+    "market_value_per_kg": 750.0,
+    "recovery_rate": 0.92,
+    "hazard_level": "none",
+    "environmental_impact_factor": 4.5
+  },
+  {
+    "name": "Aluminium",
+    "category": "base_metal",
+    "market_value_per_kg": 210.0,
+    "recovery_rate": 0.90,
+    "hazard_level": "none",
+    "environmental_impact_factor": 9.2
+  },
+  {
+    "name": "Gold",
+    "category": "precious_metal",
+    "market_value_per_kg": 6500000.0,
+    "recovery_rate": 0.95,
+    "hazard_level": "none",
+    "environmental_impact_factor": 1250.0
+  },
+  {
+    "name": "Silver",
+    "category": "precious_metal",
+    "market_value_per_kg": 85000.0,
+    "recovery_rate": 0.90,
+    "hazard_level": "none",
+    "environmental_impact_factor": 250.0
+  },
+  {
+    "name": "Cobalt",
+    "category": "precious_metal",
+    "market_value_per_kg": 2800.0,
+    "recovery_rate": 0.85,
+    "hazard_level": "medium",
+    "environmental_impact_factor": 15.0
+  },
+  {
+    "name": "Lithium",
+    "category": "hazardous_compound",
+    "market_value_per_kg": 1500.0,
+    "recovery_rate": 0.70,
+    "hazard_level": "high",
+    "environmental_impact_factor": 8.0
+  },
+  {
+    "name": "ABS/PC Engineering Plastics",
+    "category": "polymer",
+    "market_value_per_kg": 45.0,
+    "recovery_rate": 0.75,
+    "hazard_level": "low",
+    "environmental_impact_factor": 1.8
+  },
+  {
+    "name": "Silicon / Semiconductor Wafers",
+    "category": "base_metal",
+    "market_value_per_kg": 300.0,
+    "recovery_rate": 0.60,
+    "hazard_level": "low",
+    "environmental_impact_factor": 3.0
+  },
+  {
+    "name": "Steel / Zinc Alloy",
+    "category": "base_metal",
+    "market_value_per_kg": 40.0,
+    "recovery_rate": 0.95,
+    "hazard_level": "none",
+    "environmental_impact_factor": 1.5
+  },
+  {
+    "name": "Neodymium",
+    "category": "precious_metal",
+    "market_value_per_kg": 4500.0,
+    "recovery_rate": 0.80,
+    "hazard_level": "low",
+    "environmental_impact_factor": 18.0
+  },
+  {
+    "name": "LCD Glass & Indium Tin Oxide",
+    "category": "glass",
+    "market_value_per_kg": 25.0,
+    "recovery_rate": 0.50,
+    "hazard_level": "medium",
+    "environmental_impact_factor": 0.8
+  },
+  {
+    "name": "Brominated Flame Retardants & Lead Traces",
+    "category": "hazardous_compound",
+    "market_value_per_kg": -50.0,
+    "recovery_rate": 0.30,
+    "hazard_level": "critical",
+    "environmental_impact_factor": 0.0
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "general_disclaimer": "AI-generated component identification and material composition are estimates and should not be treated as a certified recycling, hazardous-material, or commercial valuation assessment. Always observe OSHA/WEEE safety guidelines when handling electronic scrap.",
+  "hazard_protocols": {
+    "battery": {
+      "severity": "CRITICAL",
+      "hazard_type": "Thermal Runaway & Heavy Metal Exposure",
+      "warning": "DO NOT ATTEMPT MANUAL CELL TEARDOWN. Puncturing or bending lithium-ion batteries can trigger rapid exothermic thermal runaway with toxic fluoride and heavy metal gas emission.",
+      "personal_protective_equipment": [
+        "Cut-resistant, heat-resistant safety gloves",
+        "Full face shield / safety glasses",
+        "Class D or specialized lithium battery fire extinguishing equipment nearby"
+      ],
+      "mandatory_steps": [
+        "Disconnect battery from motherboard before touching any other subassembly",
+        "Check battery pouch for thermal bloating, swelling, pungent chemical smell, or electrolyte leakage",
+        "Insulate terminals with non-conductive electrical tape immediately",
+        "Transfer immediately to a certified fire-safe battery collection drum"
+      ]
+    },
+    "storage": {
+      "severity": "DATA_SECURITY",
+      "hazard_type": "Data Breach & Personally Identifiable Information Exposure",
+      "warning": "Unsanitized solid-state and hard drives may harbor sensitive personal, financial, or organizational credentials.",
+      "mandatory_steps": [
+        "Perform NIST SP 800-88 Rev 1 Cryptographic Erase or ATA Secure Erase",
+        "Verify 100% completion of overwrite before channel transfer",
+        "If drive is non-functional or unreadable, perform physical mechanical degaussing/shredding (cross-cut ≤ 2mm)"
+      ]
+    },
+    "glass_display": {
+      "severity": "PHYSICAL_SAFETY",
+      "hazard_type": "Laceration Risk & Indium/Mercury Exposure",
+      "warning": "Broken display glass poses deep laceration hazards. Older non-LED CCFL backlights contain trace mercury vapor.",
+      "mandatory_steps": [
+        "Wear cut-resistant safety gloves (ANSI Level A4 or higher)",
+        "Inspect backlight type: if CCFL, handle unbroken into dedicated mercury-recovery stream"
+      ]
+    },
+    "capacitors_power": {
+      "severity": "ELECTRICAL_SHOCK",
+      "hazard_type": "Residual High Voltage Capacitive Charge",
+      "warning": "High-voltage electrolytic capacitors on power inverter or power delivery stages can hold charges even after unplugging.",
+      "mandatory_steps": [
+        "Discharge bulk capacitors using an insulated 100-ohm 5W power resistor before touching solder joints"
+      ]
+    }
+  }
+}

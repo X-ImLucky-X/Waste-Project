@@ -1,0 +1,344 @@
+{
+  "category": "Laptop",
+  "name": "Standard Laptop (15.6-inch)",
+  "average_weight_kg": 2.35,
+  "components": [
+    {
+      "code": "battery",
+      "name": "Lithium-Ion / LiPo Battery Pack",
+      "default_category": "HAZARDOUS",
+      "weight_kg": 0.35,
+      "removal_time_min": 2.5,
+      "damage_probability": 0.04,
+      "market_value_inr": 800.0,
+      "hazard_level": "high",
+      "is_hazardous": true,
+      "allow_manual_disassembly": false,
+      "data_wipe_required": false,
+      "recycling_channel": "Authorized Lithium Hydrometallurgical Recycling Facility",
+      "handling_dos": [
+        "Inspect for swelling, puncturing, or thermal stress before removal",
+        "Disconnect battery connector before touching any other internal components",
+        "Store in fire-retardant vermiculite lined container at room temperature",
+        "Tape over exposed terminal contacts to prevent short-circuiting"
+      ],
+      "handling_donts": [
+        "DO NOT puncture, bend, pry with sharp metallic tools, or drop",
+        "DO NOT attempt cell-level teardown or manual dismantling of battery pouch",
+        "DO NOT incinerate or dispose in municipal solid waste",
+        "DO NOT expose to temperatures exceeding 60°C or direct moisture"
+      ],
+      "materials": {
+        "Lithium": 0.08,
+        "Cobalt": 0.18,
+        "Aluminium": 0.22,
+        "Copper": 0.16,
+        "ABS/PC Engineering Plastics": 0.15,
+        "Brominated Flame Retardants & Lead Traces": 0.21
+      }
+    },
+    {
+      "code": "ssd",
+      "name": "NVMe / SATA M.2 Solid State Drive",
+      "default_category": "REUSABLE",
+      "weight_kg": 0.03,
+      "removal_time_min": 1.5,
+      "damage_probability": 0.03,
+      "market_value_inr": 1800.0,
+      "hazard_level": "none",
+      "is_hazardous": false,
+      "allow_manual_disassembly": true,
+      "data_wipe_required": true,
+      "recycling_channel": "Data Sanitization / Secondary Electronics Marketplace / PCB Refiner",
+      "handling_dos": [
+        "Perform NIST SP 800-88 compliant cryptographic erase or multi-pass wipe",
+        "Check S.M.A.R.T health attributes (wear leveling, bad blocks, TBW)",
+        "Handle by PCB edges using anti-static ESD wrist strap",
+        "Package in conductive anti-static bubble sleeve"
+      ],
+      "handling_donts": [
+        "DO NOT resell or donate without cryptographically verifying data eradication",
+        "DO NOT flex or exert bending pressure on the M.2 PCB",
+        "DO NOT touch the gold pin fingers with bare oily fingers"
+      ],
+      "materials": {
+        "Silicon / Semiconductor Wafers": 0.35,
+        "Copper": 0.20,
+        "Gold": 0.0008,
+        "Silver": 0.002,
+        "ABS/PC Engineering Plastics": 0.15,
+        "Steel / Zinc Alloy": 0.10,
+        "Brominated Flame Retardants & Lead Traces": 0.1972
+      }
+    },
+    {
+      "code": "ram",
+      "name": "DDR4 / DDR5 SO-DIMM RAM Module",
+      "default_category": "REUSABLE",
+      "weight_kg": 0.025,
+      "removal_time_min": 1.0,
+      "damage_probability": 0.02,
+      "market_value_inr": 1200.0,
+      "hazard_level": "none",
+      "is_hazardous": false,
+      "allow_manual_disassembly": true,
+      "data_wipe_required": false,
+      "recycling_channel": "Secondary Component Testing & Resale / Precious Metal Recovery",
+      "handling_dos": [
+        "Release retaining clips sideways to allow 30-degree popup",
+        "Inspect DRAM chips and capacitors for signs of burn or liquid corrosion",
+        "Test with MemTest86 on diagnostic bench",
+        "Clean contact pins with 99% isopropyl alcohol if oxidized"
+      ],
+      "handling_donts": [
+        "DO NOT pull module vertically before releasing retaining latches",
+        "DO NOT touch gold connector contacts with ungrounded hands",
+        "DO NOT subject to electrostatic discharge"
+      ],
+      "materials": {
+        "Silicon / Semiconductor Wafers": 0.30,
+        "Copper": 0.25,
+        "Gold": 0.0012,
+        "Silver": 0.0025,
+        "ABS/PC Engineering Plastics": 0.15,
+        "Brominated Flame Retardants & Lead Traces": 0.2963
+      }
+    },
+    {
+      "code": "motherboard",
+      "name": "Main Logic Board (CPU/GPU/VRM Subsystem)",
+      "default_category": "RECYCLABLE",
+      "weight_kg": 0.32,
+      "removal_time_min": 6.0,
+      "damage_probability": 0.07,
+      "market_value_inr": 950.0,
+      "hazard_level": "low",
+      "is_hazardous": false,
+      "allow_manual_disassembly": true,
+      "data_wipe_required": false,
+      "recycling_channel": "High-Grade E-Waste Smelter / Hydrometallurgical Precious Metals Extraction",
+      "handling_dos": [
+        "Unscrew all marked motherboard anchor screws methodically",
+        "Disconnect display, trackpad, keyboard, and speaker ZIF cables carefully",
+        "Depopulate discrete daughtercards and heat sink before bulk packing",
+        "Route to specialized smelter for gold, silver, copper, and palladium reclamation"
+      ],
+      "handling_donts": [
+        "DO NOT snap or crack the multi-layer PCB when lifting",
+        "DO NOT burn or open-air incinerate PCB to melt solder",
+        "DO NOT use aggressive acid baths without industrial fume scrubbers"
+      ],
+      "materials": {
+        "Copper": 0.28,
+        "Silicon / Semiconductor Wafers": 0.18,
+        "Gold": 0.0015,
+        "Silver": 0.0035,
+        "Aluminium": 0.10,
+        "Steel / Zinc Alloy": 0.08,
+        "ABS/PC Engineering Plastics": 0.08,
+        "Brominated Flame Retardants & Lead Traces": 0.275
+      }
+    },
+    {
+      "code": "display",
+      "name": "15.6-inch LCD / IPS Display Assembly",
+      "default_category": "REPAIRABLE",
+      "weight_kg": 0.42,
+      "removal_time_min": 5.0,
+      "damage_probability": 0.12,
+      "market_value_inr": 2200.0,
+      "hazard_level": "medium",
+      "is_hazardous": false,
+      "allow_manual_disassembly": true,
+      "data_wipe_required": false,
+      "recycling_channel": "Panel Testing / Polarizer Refurbishment / Specialized Glass Indium Recovery",
+      "handling_dos": [
+        "Test for backlight bleed, dead pixels, and panel cracked substrate",
+        "Disconnect eDP 30/40-pin connector with gentle horizontal pull",
+        "Cover glass surface with protective anti-scratch film",
+        "Store vertically in padded slot dividers"
+      ],
+      "handling_donts": [
+        "DO NOT twist, torque, or apply pinpoint pressure on panel face",
+        "DO NOT crush CCFL / backlight assemblies (LED is standard, older CCFL has trace mercury)",
+        "DO NOT handle broken glass without cut-resistant nitrile gloves"
+      ],
+      "materials": {
+        "LCD Glass & Indium Tin Oxide": 0.48,
+        "Aluminium": 0.24,
+        "ABS/PC Engineering Plastics": 0.16,
+        "Copper": 0.06,
+        "Steel / Zinc Alloy": 0.06
+      }
+    },
+    {
+      "code": "cooling_system",
+      "name": "Copper Heatpipe & Aluminium Fin Assembly",
+      "default_category": "RECYCLABLE",
+      "weight_kg": 0.14,
+      "removal_time_min": 2.5,
+      "damage_probability": 0.03,
+      "market_value_inr": 220.0,
+      "hazard_level": "none",
+      "is_hazardous": false,
+      "allow_manual_disassembly": true,
+      "data_wipe_required": false,
+      "recycling_channel": "High-Grade Non-Ferrous Scrap Metal Smelter",
+      "handling_dos": [
+        "Loosen numbered heatsink screws in diagonal reverse order (4-3-2-1) to avoid chip cracking",
+        "Clean dried thermal paste using isopropyl alcohol swabs",
+        "Separate copper heat pipes from aluminium fin radiator if automated shredding permits"
+      ],
+      "handling_donts": [
+        "DO NOT kink or puncture sealed sintered copper vapor heatpipes",
+        "DO NOT yank heatsink while thermal paste is cold and bonded"
+      ],
+      "materials": {
+        "Copper": 0.68,
+        "Aluminium": 0.30,
+        "Steel / Zinc Alloy": 0.02
+      }
+    },
+    {
+      "code": "cooling_fans",
+      "name": "Brushless Centrifugal DC Blower Fan",
+      "default_category": "REUSABLE",
+      "weight_kg": 0.06,
+      "removal_time_min": 1.5,
+      "damage_probability": 0.04,
+      "market_value_inr": 350.0,
+      "hazard_level": "none",
+      "is_hazardous": false,
+      "allow_manual_disassembly": true,
+      "data_wipe_required": false,
+      "recycling_channel": "Small Appliance Component Reuse / Polymer & Copper Extraction",
+      "handling_dos": [
+        "Check rotor spin freedom and bearing friction noise",
+        "Clean accumulated lint and dust using compressed air",
+        "Resell as spare replacement part if bearing is smooth"
+      ],
+      "handling_donts": [
+        "DO NOT over-spin fan blades using excessive pressure air without immobilizing rotor",
+        "DO NOT snap plastic impeller blades"
+      ],
+      "materials": {
+        "ABS/PC Engineering Plastics": 0.55,
+        "Copper": 0.25,
+        "Neodymium": 0.08,
+        "Steel / Zinc Alloy": 0.12
+      }
+    },
+    {
+      "code": "chassis",
+      "name": "Enclosure & Bottom Chassis (Top/Bottom/Bezel)",
+      "default_category": "RECYCLABLE",
+      "weight_kg": 0.72,
+      "removal_time_min": 3.0,
+      "damage_probability": 0.05,
+      "market_value_inr": 300.0,
+      "hazard_level": "none",
+      "is_hazardous": false,
+      "allow_manual_disassembly": true,
+      "data_wipe_required": false,
+      "recycling_channel": "Pelletized Polymer Regrind / Post-Consumer Aluminium Recycling",
+      "handling_dos": [
+        "Remove brass threaded standoff inserts using ultrasonic or thermal separation",
+        "Separate magnesium-aluminium alloy lids from polycarbonate bottom shells",
+        "Shred and pelletize clean thermoplastic casings for injection molding"
+      ],
+      "handling_donts": [
+        "DO NOT mix flame-retardant polymers with virgin recyclable polymers",
+        "DO NOT send metal-inlaid plastics to direct plastic melting furnaces"
+      ],
+      "materials": {
+        "ABS/PC Engineering Plastics": 0.65,
+        "Aluminium": 0.25,
+        "Steel / Zinc Alloy": 0.10
+      }
+    },
+    {
+      "code": "keyboard_trackpad",
+      "name": "Chiclet Keyboard & Precision Capacitive Trackpad",
+      "default_category": "REPAIRABLE",
+      "weight_kg": 0.18,
+      "removal_time_min": 3.0,
+      "damage_probability": 0.06,
+      "market_value_inr": 650.0,
+      "hazard_level": "none",
+      "is_hazardous": false,
+      "allow_manual_disassembly": true,
+      "data_wipe_required": false,
+      "recycling_channel": "Input Peripheral Refurbishment / Metal-Membrane Recovery",
+      "handling_dos": [
+        "Test key response and actuation matrix on test bench",
+        "Inspect scissor-switch mechanisms for missing keycaps",
+        "Ultrasonically clean membrane contacts if sticky"
+      ],
+      "handling_donts": [
+        "DO NOT rip delicate ribbon flat cables",
+        "DO NOT submerge trackpad controller electronics in water"
+      ],
+      "materials": {
+        "ABS/PC Engineering Plastics": 0.50,
+        "Aluminium": 0.28,
+        "Copper": 0.12,
+        "Steel / Zinc Alloy": 0.10
+      }
+    },
+    {
+      "code": "speakers",
+      "name": "Internal Stereo Speakers with NdFeB Magnets",
+      "default_category": "RECYCLABLE",
+      "weight_kg": 0.045,
+      "removal_time_min": 1.0,
+      "damage_probability": 0.02,
+      "market_value_inr": 150.0,
+      "hazard_level": "none",
+      "is_hazardous": false,
+      "allow_manual_disassembly": true,
+      "data_wipe_required": false,
+      "recycling_channel": "Rare-Earth Magnet Reclamation / Electronic Scrap",
+      "handling_dos": [
+        "Extract high-field Neodymium (NdFeB) permanent magnets for rare-earth circularity",
+        "Test coil continuity with ohmmeter (4 to 8 ohm typical)"
+      ],
+      "handling_donts": [
+        "DO NOT store unshielded magnets next to magnetic media or credit cards",
+        "DO NOT chip brittle neodymium magnets"
+      ],
+      "materials": {
+        "Neodymium": 0.25,
+        "Copper": 0.20,
+        "ABS/PC Engineering Plastics": 0.35,
+        "Steel / Zinc Alloy": 0.20
+      }
+    },
+    {
+      "code": "cables_connectors",
+      "name": "Internal Wiring, Coaxial Antennas & DC-In Jack",
+      "default_category": "RECYCLABLE",
+      "weight_kg": 0.06,
+      "removal_time_min": 2.0,
+      "damage_probability": 0.05,
+      "market_value_inr": 180.0,
+      "hazard_level": "none",
+      "is_hazardous": false,
+      "allow_manual_disassembly": true,
+      "data_wipe_required": false,
+      "recycling_channel": "Wire Granulation & Copper Scrap Refining",
+      "handling_dos": [
+        "Bundle cables together for mechanical granulator wire-stripping",
+        "Inspect DC-In power jack for thermal melting or loose center pins"
+      ],
+      "handling_donts": [
+        "DO NOT open-burn insulated cables to strip PVC/Teflon jackets"
+      ],
+      "materials": {
+        "Copper": 0.65,
+        "ABS/PC Engineering Plastics": 0.25,
+        "Gold": 0.0005,
+        "Steel / Zinc Alloy": 0.0995
+      }
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    background-color: #f4f4f5;
+    color: #000000;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Smooth Top-Left to Bottom-Right Moving Dots Background */
+@keyframes traverseDots {
+  0% {
+    background-position: 0px 0px, 16px 16px;
+  }
+  100% {
+    background-position: 32px 32px, 48px 48px;
+  }
+}
+
+.moving-dots-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: 
+    radial-gradient(circle, rgba(0, 0, 0, 0.28) 2px, transparent 2px),
+    radial-gradient(circle, rgba(220, 38, 38, 0.22) 2px, transparent 2px);
+  background-size: 32px 32px;
+  animation: traverseDots 6s linear infinite;
+  will-change: background-position;
+}
+
+/* Crisp minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
+
+/* Tri-Color (Red + White + Black) Card Styling */
+.tri-card {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 0px 0px #000000;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tri-card:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.tri-card-flat {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 1rem;
+}
+
+.tri-btn-red {
+  background-color: #dc2626;
+  color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  box-shadow: 2px 2px 0px 0px #000000;
+  transition: all 0.15s ease;
+}
+
+.tri-btn-red:hover {
+  background-color: #b91c1c;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px 0px #000000;
+}
+
+.tri-btn-red:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px 0px #000000;
+}
+
+.tri-btn-black {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  box-shadow: 2px 2px 0px 0px #dc2626;
+  transition: all 0.15s ease;
+}
+
+.tri-btn-black:hover {
+  background-color: #18181b;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px 0px #dc2626;
+}
+
+.tri-btn-white {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  box-shadow: 2px 2px 0px 0px #000000;
+  transition: all 0.15s ease;
+}
+
+.tri-btn-white:hover {
+  background-color: #fef2f2;
+  border-color: #dc2626;
+  color: #dc2626;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px 0px #000000;
+}
+
+.tri-input {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 0.75rem;
+  color: #000000;
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  box-shadow: 1px 1px 0px 0px #000000;
+  transition: all 0.15s ease;
+}
+
+.tri-input:focus {
+  outline: none;
+  border-color: #dc2626;
+  box-shadow: 2px 2px 0px 0px #dc2626;
+}
